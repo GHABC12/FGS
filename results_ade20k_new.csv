@@ -1,0 +1,3 @@
+corruption,steps,lr_prompt,lr_backbone,layers,prompt_len,num_bands,lambda_gate,lambda_f,rho,winning_groups,mIoU
+fog,10,1e-5,0,All_Gate_Module_1_2,100,5,0.5,0.005,0.0625,Global Winner Layer: group1,35.549141033583005
+frost,10,5e-5,0,All_Gate_Module_1_2,100,2,0.5,0.005,0.01,Global Winner Layer: group1,23.602290157933314

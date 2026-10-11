@@ -1,0 +1,15 @@
+corruption=defocus_blur
+prompt_mode=one_shot
+sample_count=50
+sample_list_sha256=fb6bd6ecf5531fbcca53093207633404495f4def8adf742395d907040dd168e9
+clean_sample_list_sha256=4a2a3187ab38a8652591366c1865b6b6d00d00409ac01b40d0e567c00fea91bf
+protocol_hash=e838f1f53ce067180532e9d1662d0c29cbe2508728d78e3536834dfa3aba4bd6
+lambda_gate=0.125
+num_bands=2
+rho=0.125
+lambda_f=0.005
+steps=10
+lr_prompt=2e-05
+prompt_len=30
+weight_decay=0
+pq=20.7950

@@ -1,0 +1,15 @@
+corruption=shot_noise
+prompt_mode=zero_shot
+sample_count=50
+sample_list_sha256=2c38915f5ec003aba2a92cbb4355a2558808d9a3f0dc74b6345548c900c38824
+clean_sample_list_sha256=4a2a3187ab38a8652591366c1865b6b6d00d00409ac01b40d0e567c00fea91bf
+protocol_hash=806033d775181dba84573975be46c9e4f6881b04396fee0a30116b632b97ff13
+lambda_gate=0.4
+num_bands=5
+rho=0.1125
+lambda_f=0.01125
+steps=10
+lr_prompt=1.25e-05
+prompt_len=30
+weight_decay=0
+pq=20.9361

@@ -1,0 +1,106 @@
+{
+  "NYUv2-C Depth": {
+    "motion_blur": {
+      "best_metric": "AbsRel",
+      "best_value": 0.1414,
+      "best_dir": "models_inference/vpt_results/motion_blur_layerAll_Gate_Module_1_2_len100_s10_lrP5e-6_lrB0_nb10_lg0.5",
+      "num_images": 8,
+      "params": {"steps": 10, "lr_prompt": 5e-6, "lr_backbone": 0, "num_bands": 10, "lambda_gate": 0.5, "lambda_f": 0, "rho": 0},
+      "all_results": [
+        {"dir": "motion_blur_layerAll_Gate_Module_1_2_len100_s9_lrP5e-6_lrB0_nb6_lg0.45_lf0.01_r0.5", "abs_rel": 0.0, "num_images": 1, "note": "degenerate (only 1 image, no GT match)"},
+        {"dir": "motion_blur_layerAll_Gate_Module_1_2_len100_s10_lrP5e-6_lrB0_nb10_lg0.5", "abs_rel": 0.1414, "num_images": 8},
+        {"dir": "motion_blur_layerAll_Gate_Module_1_2_len100_s10_lrP5e-6_lrB0_nb10_lg0.5_lf0.01_r0.08", "abs_rel": 0.1566, "num_images": 18},
+        {"dir": "motion_blur_layerAll_Gate_Module_1_2_len100_s17_lrP1.5e-5_lrB0_nb6_lg0.55_lf0.01_r0.45", "abs_rel": 0.1466, "num_images": 60}
+      ]
+    },
+    "frost": {
+      "best_metric": "AbsRel",
+      "best_value": 0.4260,
+      "best_dir": "models_inference/vpt_results/frost_layerAll_Gate_Module_1_2_len100_s10_lrP5e-6_lrB0_nb5_lg0.6",
+      "num_images": 654,
+      "params": {"steps": 10, "lr_prompt": 5e-6, "lr_backbone": 0, "num_bands": 5, "lambda_gate": 0.6, "lambda_f": 0, "rho": 0},
+      "note": "Some GT files have read errors; only one result available"
+    },
+    "snow": {
+      "best_metric": "AbsRel",
+      "best_value": 1.9586,
+      "best_dir": "models_inference/vpt_results/snow_layerAll_Gate_Module_1_2_len30_s14_lrP1e-6_lrB0_nb6_lg0.45_lf0.02_r0.45",
+      "num_images": 65,
+      "params": {"steps": 14, "lr_prompt": 1e-6, "lr_backbone": 0, "num_bands": 6, "lambda_gate": 0.45, "lambda_f": 0.02, "rho": 0.45},
+      "note": "Results are poor (both above 1.9). Needs re-tuning.",
+      "all_results": [
+        {"dir": "snow_layerAll_Gate_Module_1_2_len100_s10_lrP5e-6_lrB0_nb6_lg0.1_lf0.01_r0.08", "abs_rel": 1.9707, "num_images": 45},
+        {"dir": "snow_layerAll_Gate_Module_1_2_len30_s14_lrP1e-6_lrB0_nb6_lg0.45_lf0.02_r0.45", "abs_rel": 1.9586, "num_images": 65}
+      ]
+    },
+    "shot_noise": {
+      "best_metric": "AbsRel",
+      "best_value": 0.2065,
+      "best_dir": "models_inference/vpt_results/shot_noise_layerAll_Gate_Module_1_2_len140_s12_lrP1e-5_lrB0_nb8_lg0.3_lf0.01_r0.15",
+      "num_images": 53,
+      "params": {"steps": 12, "lr_prompt": 1e-5, "lr_backbone": 0, "num_bands": 8, "lambda_gate": 0.3, "lambda_f": 0.01, "rho": 0.15},
+      "all_results": [
+        {"dir": "shot_noise_layerAll_Gate_Module_1_2_len140_s12_lrP1e-5_lrB0_nb8_lg0.3_lf0.01_r0.15", "abs_rel": 0.2065, "num_images": 53},
+        {"dir": "shot_noise_layerAll_Gate_Module_1_2_len150_s12_lrP1e-5_lrB0_nb10_lg0.3_lf0.01_r0.20", "abs_rel": 0.2286, "num_images": 43}
+      ]
+    }
+  },
+  "ADE20K-C Seg": {
+    "shot_noise": {
+      "best_metric": "mIoU",
+      "best_value": 20.999,
+      "best_dir": "models_inference/vpt_results_ade20k_sn_zs_tuning/S1_r1_s6_lr5e-5_len100_nb5_lg0.3_lf0.005_rho0.05",
+      "num_images": 500,
+      "params": {"prompt_mode": "one-shot", "steps": 10, "lr_prompt": 2.5e-5, "num_bands": 5, "lambda_gate": 0.5, "lambda_f": 0.00075, "rho": 0.00075, "prompt_len": 105}
+    },
+    "fog": {
+      "best_metric": "mIoU",
+      "best_value": 35.55,
+      "best_dir": "models_inference/vpt_results_ade20k/fog_layerAll_Gate_Module_1_2_len100_s10_lrP1e-5_lrB0_nb5_lg0.5_lf0.005_r0.0625",
+      "num_images": 500,
+      "params": {"prompt_mode": "zero-shot", "steps": 10, "lr_prompt": 1e-5, "num_bands": 5, "lambda_gate": 0.5, "lambda_f": 0.005, "rho": 0.0625, "prompt_len": 100}
+    },
+    "frost": {
+      "best_metric": "mIoU",
+      "best_value": 23.60,
+      "best_dir": "models_inference/vpt_results_ade20k/frost_layerAll_Gate_Module_1_2_len100_s10_lrP5e-5_lrB0_nb2_lg0.5_lf0.005_r0.01",
+      "num_images": 500,
+      "params": {"prompt_mode": "one-shot", "steps": 10, "lr_prompt": 5e-5, "num_bands": 2, "lambda_gate": 0.5, "lambda_f": 0.005, "rho": 0.01, "prompt_len": 100}
+    }
+  },
+  "SIDD-C Denoise": {
+    "gaussian_noise": {
+      "best_metric": "PSNR",
+      "best_value": 16.73,
+      "ssim": 0.676,
+      "best_dir": "models_inference/sidd_vpt_results/gaussian_noise_layerAll_Gate_Module_1_2_len100_s8_lrP1e-5_lrB0_lf0.005_r0.05_nb5",
+      "num_images": 1280,
+      "params": {"steps": 8, "lr_prompt": 1e-5, "lr_backbone": 0, "lambda_f": 0.005, "rho": 0.05, "num_bands": 5, "lambda_gate": 0.2}
+    }
+  },
+  "Derain-C": {
+    "gaussian_noise": {
+      "best_metric": "PSNR",
+      "best_value": 19.87,
+      "best_dir": "models_inference/vpt_results_derain/tune_gaussian_noise_one_shot_r3_lr4.29e-05",
+      "num_images": 34,
+      "params": {"steps": 9, "lr_prompt": 1.2e-4, "num_bands": 5, "lambda_gate": 0.45, "lambda_f": 0.01, "rho": 0.1},
+      "ssim": 0.537,
+      "note": "Best available. CSV reports PSNR=19.87 for zero-shot config. tune dirs have 34/100 images."
+    }
+  },
+  "LoL-C Enhance": {
+    "gaussian_noise": {
+      "best_metric": "PSNR",
+      "best_value": 11.34,
+      "best_dir": "models_inference/vpt_results_lol/gaussian_noise_layerAll_Gate_Module_1_2_len100_s7_lrP1e-4_lrB0_b6_lg0.45",
+      "num_images": 7,
+      "params": {"steps": 7, "lr_prompt": 1e-4, "num_bands": 6, "lambda_gate": 0.45, "lambda_f": 0, "rho": 0},
+      "ssim": 0.429,
+      "all_results": [
+        {"dir": "gaussian_noise_layerAll_Gate_Module_1_2_len100_s7_lrP1e-4_lrB0_b6_lg0.45", "psnr": 11.34, "ssim": 0.429, "num_images": 7},
+        {"dir": "gaussian_noise_layerAll_Gate_Module_1_2_len40_s7_lrP8e-5_lrB0_b6_lg1_lf0.01_r0.4", "psnr": 10.65, "ssim": 0.625, "num_images": 3}
+      ]
+    }
+  }
+}

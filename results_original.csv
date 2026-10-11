@@ -1,0 +1,6 @@
+corruption,steps,lr_prompt,lr_backbone,layers,prompt_len,num_bands,lambda_gate,lambda_f,rho,winning_groups,psnr,ssim
+pixelate,5,4e-5,0,All_Gate_Module_1_2,20,6,0.3,0.005,0.3,Global Winner Layer: group2,20.9679,0.8096
+pixelate,5,4e-5,0,All_Gate_Module_1_2,30,6,0.3,0.005,0.3,Global Winner Layer: group2,21.1291,0.8089
+pixelate,5,4e-5,0,All_Gate_Module_1_2,40,6,0.3,0.005,0.3,Global Winner Layer: group2,20.8144,0.8036
+pixelate,5,4e-5,0,All_Gate_Module_1_2,50,6,0.3,0.005,0.3,Global Winner Layer: group2,20.5923,0.8003
+pixelate,5,4e-5,0,All_Gate_Module_1_2,60,6,0.3,0.005,0.3,Global Winner Layer: group2,20.5642,0.7982

@@ -1,0 +1,15 @@
+corruption=gaussian_noise
+prompt_mode=one_shot
+sample_count=100
+sample_list_sha256=b87d194fc1e4c6921996572d9b5aa93cf98fce9943d0724aa7dd4b43eac26c7b
+clean_sample_list_sha256=3f0bd4854a8ad88c2a12080463ece5e8c029c88f33c18c2e50a837220bc24a61
+protocol_hash=058f1cc1fdc88212a5110bf52373863a006b502f8f0647be428b88c2d6f6a545
+lambda_gate=0.125
+num_bands=2
+rho=0.075
+lambda_f=0.0025
+steps=10
+lr_prompt=1.75e-05
+prompt_len=28
+weight_decay=0
+pq=21.6193

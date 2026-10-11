@@ -1,0 +1,62 @@
+__pycache__/
+*.py[cod]
+
+# ---- 数据 / 权重 / 大产物(体积过大且非代码,禁止入库) ----
+data/
+datasets/
+datasets
+toy_datasets/
+models/
+models_inference/
+work_dirs/
+wandb/
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
+.nfs*
+
+# ---- 图像 / 文档二进制(实验输出,非代码) ----
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.pdf
+
+# ---- 第三方框架(原版 clone,各自带 .git,按需另行安装) ----
+detectron2/
+mmcv/
+mmdetection/
+mmpose/
+
+# ---- 虚拟环境 / 工具本地目录(含密钥,严禁入库) ----
+.venv/
+venv/
+.env
+.codex/
+.cursor/
+.claude/
+.idea/
+
+# ---- 日志 / 临时文件 ----
+*.log
+log.txt
+log*.txt
+*log.txt
+temp/
+*.bak
+*.bak.*
+
+# ---- 调参运行时状态文件(lock/pid/work 及 status 目录,非结果) ----
+*.lock
+*.pid
+*.status
+status/
+work/
+master.nohup.log
+*.nohup.log
+
+# ---- 编辑器本地配置 ----
+.vscode/

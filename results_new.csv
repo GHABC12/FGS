@@ -1,0 +1,2 @@
+corruption,steps,lr_prompt,lr_backbone,layers,prompt_len,num_bands,lambda_gate,lambda_f,rho,winning_groups,psnr,ssim
+frost,7,8e-5,0,All_Gate_Module_1_2,40,6,0.45,0.01,0.3,Global Winner Layer: group1,11.7271,0.4361

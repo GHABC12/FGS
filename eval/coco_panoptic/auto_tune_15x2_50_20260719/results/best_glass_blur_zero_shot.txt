@@ -1,0 +1,15 @@
+corruption=glass_blur
+prompt_mode=zero_shot
+sample_count=50
+sample_list_sha256=a6239c7a068bc42259dcbb4501e6cdfb6b1669183a9bbfebb6a5a0ebbd3d2c37
+clean_sample_list_sha256=4a2a3187ab38a8652591366c1865b6b6d00d00409ac01b40d0e567c00fea91bf
+protocol_hash=458706a33e5174dead1991382caa7765ec58403fc677c35c79674ca4cae76676
+lambda_gate=0.125
+num_bands=2
+rho=0.1625
+lambda_f=0.01125
+steps=10
+lr_prompt=2e-05
+prompt_len=30
+weight_decay=0
+pq=20.6066
